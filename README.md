@@ -21,5 +21,8 @@ python main.py --model_name T_CE --dataset amazon_book --model_type NeuMF-end --
 *   `--test_all 1`: Enable full-ranking evaluation (ranking against all non-interacted items), consistent with DenoisingRec.
 *   `--regenerate 1`: If you have modified the data reader or need to reload raw data, use this flag to ignore cached `.pkl` files.
 
+**Key Arguments for R_CE:**
+*   `--alpha`: The final drop rate for the reweighted loss. Default `0.2`.
+
 **Note**: The `DenoisingReader` is used automatically for `T_CE` to handle the specific data format of DenoisingRec datasets.
 
